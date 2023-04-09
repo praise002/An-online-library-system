@@ -1,0 +1,12 @@
+{% extends 'library/base.html' %}
+
+{% block title %}Categories{% endblock %}
+
+{% block content %}
+    <h1>Categories</h1>
+    {% for category in categories %}
+        <ul>
+            <li><a href="{% url 'library:book_list' category.id %}">{{ category.name }}</a></li>
+        </ul>
+    {% endfor %}
+{% endblock %}

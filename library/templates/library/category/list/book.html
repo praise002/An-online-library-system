@@ -1,0 +1,14 @@
+{% extends 'library/base.html' %}
+
+{% block title %}{{ category.name }}{% endblock %}
+
+{% block content %}
+    <h1>{{ category.name }}</h1>
+    {% for book in books %}
+        <ul>
+            <li><a href="{% url 'library:book_detail' book.id %}">{{ book.title }}</a></li>
+        </ul>
+    {% empty %}
+        <p>No book available in this category.</p>
+    {% endfor %}
+{% endblock %}
