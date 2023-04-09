@@ -12,3 +12,6 @@ Commands
 - python manage.py makemigrations 
 - python manage.py migrate
 - python manage.py createsuperuser
+
+**I created this course for my blog in educative.io, it is currently a work in progress and I plan to do a full course on it.**
+[educative.io](https://www.educative.io/profile/view/5827538983845888)
